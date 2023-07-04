@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.w-64 {
+    @apply text-center;
+}
+* {
+    box-sizing: border-box !important;
+}
