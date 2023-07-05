@@ -42,9 +42,7 @@ const Home = () => {
 				</div>
 			</main>
 			<Layout>
-				<RecomendacionesSection>
-					<Title>Nuestra recomendación</Title>
-
+				<RecomendacionesSection title="Nuestra recomendación">
 					<Recomendaciones
 						title={'Norway'}
 						description={'Beautiful landscapes'}

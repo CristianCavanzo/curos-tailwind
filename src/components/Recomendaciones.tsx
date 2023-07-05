@@ -4,7 +4,7 @@ import React from 'react';
 const Recomendaciones = ({ title, description, image, color }) => {
 	const textColor = (color === 'bg-white' && 'text-tertiary') || 'text-white';
 	return (
-		<div className="w-64 rounded-lg shadow-md">
+		<div className="Card">
 			<div>
 				<Image
 					quality="100"
