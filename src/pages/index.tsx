@@ -1,15 +1,17 @@
 import Image from 'next/image';
 import React, { Fragment } from 'react';
-import SanFrancisco from '../public/img/sanFrancisco.jpg';
-import Norway from '../public/img/norway.jpg';
-import NewYork from '../public/img/new_york.jpg';
-import Yosemite from '../public/img/yosemite.jpg';
-import Seattle from '../public/img/seattle.jpg';
-import Switzerland from '../public/img/switzerland.jpg';
+import SanFrancisco from '@img/sanFrancisco.jpg';
+import Norway from '@img/norway.jpg';
+import NewYork from '@img/new_york.jpg';
+import Yosemite from '@img/yosemite.jpg';
+import Seattle from '@img/seattle.jpg';
+import Switzerland from '@img/switzerland.jpg';
 import { Recomendaciones } from '../components/Recomendaciones';
 import { RecomendacionesSection } from '../components/RecomendacionesSection';
 import { Layout } from '../Layout';
-import { Title } from '../components/Title';
+import { Trending } from '../components/Trending/Trending';
+import { FAQS } from '../components/FAQS/FAQS';
+
 const Home = () => {
 	return (
 		<Fragment>
@@ -28,13 +30,13 @@ const Home = () => {
 						/>
 						<div className="z-2 column absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-between p-8 pb-16 pt-16">
 							<input
-								className="w-full rounded-full bg-white p-2 text-center shadow-sm "
+								className="w-full rounded-full bg-white p-2 text-center shadow-sm transition duration-300 focus-within:shadow-xl focus:w-11/12 focus:ring-2 focus:ring-primary "
 								type="search"
 								name=""
 								id=""
 								placeholder="Destino"
 							/>
-							<button className="w-fit rounded-full bg-white p-2 pl-8 pr-8 text-center font-semibold text-principal shadow-sm">
+							<button className="w-fit transform rounded-full bg-white p-2 pl-8 pr-8 text-center font-semibold text-principal shadow-sm transition-all duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-principal hover:text-white">
 								Explore More
 							</button>
 						</div>
@@ -77,6 +79,8 @@ const Home = () => {
 						color="bg-principal"
 					></Recomendaciones>
 				</RecomendacionesSection>
+				<Trending />
+				<FAQS></FAQS>
 			</Layout>
 		</Fragment>
 	);

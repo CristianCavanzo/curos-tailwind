@@ -8,5 +8,5 @@
 	box-sizing: border-box !important;
 }
 .Card {
-	@apply w-64 flex-none rounded-lg shadow-md;
+	@apply w-64 flex-none transform rounded-lg shadow-md transition-all hover:-translate-y-4 hover:shadow-xl;
 }
