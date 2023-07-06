@@ -4,18 +4,18 @@ import { faHouse, faSearch, faHeart, faUser } from '@fortawesome/free-solid-svg-
 import Link from 'next/link';
 const TabBar = () => {
 	return (
-		<div className="fixed bottom-0 left-0 right-0 flex h-16 w-full items-center justify-evenly bg-white shadow-md ">
+		<div className="fixed bottom-0 left-0 right-0 flex h-16 w-full items-center justify-evenly bg-white shadow-2xl lg:hidden ">
 			<a href="/#home">
-				<FontAwesomeIcon icon={faHouse} size="xl" className="fill-current text-gray-400" />
+				<FontAwesomeIcon icon={faHouse} size="xl" className="fill-current text-gray-300" />
 			</a>
 			<Link href="/">
-				<FontAwesomeIcon icon={faSearch} size="xl" className=" fill-current text-gray-400" />
+				<FontAwesomeIcon icon={faSearch} size="xl" className=" fill-current text-gray-300" />
 			</Link>
 			<Link href="/">
-				<FontAwesomeIcon icon={faHeart} size="xl" className=" fill-current text-gray-400" />
+				<FontAwesomeIcon icon={faHeart} size="xl" className=" fill-current text-gray-300" />
 			</Link>
 			<Link href="/">
-				<FontAwesomeIcon icon={faUser} size="xl" className=" fill-current text-gray-400" />
+				<FontAwesomeIcon icon={faUser} size="xl" className=" fill-current text-gray-300" />
 			</Link>
 		</div>
 	);

@@ -19,26 +19,22 @@ const Home = () => {
 		<Fragment>
 			<nav></nav>
 			<div id="tabBar"></div>
-			<main id='home' className="h-[90vh] max-h-[600px] w-screen">
-				<div className="w-100 h-[90vh] max-h-[600px]">
-					<div className="w-100 relative h-[90vh] max-h-[600px]">
-						<Image
-							fill={true}
-							style={{ objectFit: 'cover' }}
-							quality="100"
-							src={SanFrancisco}
-							alt={''}
-							className="object-cover "
-						/>
-						<div className="z-2 column absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-between p-8 pb-16 pt-16">
+			<main id="home" className="h-[90vh] max-h-[600px] w-screen ">
+				<div className="w-100 h-[90vh] max-h-[600px] ">
+					<div className="w-100 relative h-[90vh] max-h-[600px]  ">
+						<Image fill={true} quality="100" src={SanFrancisco} alt={''} className="object-cover" />
+						<div className="z-2 column absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-between p-8 pb-16 pt-16 lg:items-start lg:justify-start lg:space-y-4 lg:p-16 lg:pt-20">
 							<input
-								className="w-full rounded-full bg-white p-2 text-center shadow-sm transition duration-300 focus-within:shadow-xl focus:w-11/12 focus:ring-2 focus:ring-primary "
+								className="w-full rounded-full bg-white p-2 text-center shadow-sm transition duration-300 focus-within:shadow-xl focus:w-11/12 focus:ring-2 focus:ring-primary lg:hidden"
 								type="search"
 								name=""
 								id=""
 								placeholder="Destino"
 							/>
-							<button className="w-fit transform rounded-full bg-white p-2 pl-8 pr-8 text-center font-semibold text-principal shadow-sm transition-all duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-principal hover:text-white">
+							<h2 className="hidden text-4xl font-bold lg:block">
+								Find More Locations <br /> like this
+							</h2>
+							<button className="w-fit transform rounded-full bg-white p-2 pl-8 pr-8 text-center font-semibold text-principal shadow-sm transition-all duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-principal hover:text-white ">
 								Explore More
 							</button>
 						</div>
