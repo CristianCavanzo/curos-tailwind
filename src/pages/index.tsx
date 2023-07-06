@@ -11,13 +11,15 @@ import { RecomendacionesSection } from '../components/RecomendacionesSection';
 import { Layout } from '../Layout';
 import { Trending } from '../components/Trending/Trending';
 import { FAQS } from '../components/FAQS/FAQS';
+import { Footer } from '../components/Footer';
+import { TabBar } from '../components/TabBar';
 
 const Home = () => {
 	return (
 		<Fragment>
 			<nav></nav>
 			<div id="tabBar"></div>
-			<main className="h-[90vh] max-h-[600px] w-screen">
+			<main id='home' className="h-[90vh] max-h-[600px] w-screen">
 				<div className="w-100 h-[90vh] max-h-[600px]">
 					<div className="w-100 relative h-[90vh] max-h-[600px]">
 						<Image
@@ -81,7 +83,9 @@ const Home = () => {
 				</RecomendacionesSection>
 				<Trending />
 				<FAQS></FAQS>
+				<Footer />
 			</Layout>
+			<TabBar />
 		</Fragment>
 	);
 };
