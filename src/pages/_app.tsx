@@ -12,7 +12,7 @@ config.autoAddCss = false;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<div className={montserrat.className}>
+		<div className={`${montserrat.className} overflow-x-hidden dark:bg-gray-900`}>
 			<Component {...pageProps} />
 		</div>
 	);

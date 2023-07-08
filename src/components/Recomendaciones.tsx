@@ -7,7 +7,7 @@ const Recomendaciones = ({ title, description, image, color }) => {
 		<div className="Card">
 			<div>
 				<Image
-					quality="100"
+					quality={100}
 					src={image}
 					alt={''}
 					width={256}
